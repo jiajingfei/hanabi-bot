@@ -26,7 +26,7 @@ let sandbox_command =
           [ Players.base_player
           ; Players.base_player ]
       in
-      printf "%s\n%!" (Sexp.to_string (Game.State.sexp_of_t state))
+      printf "%s\n%!" (Sexp.to_string (Game.State.sexp_of_t state)))
 
 (* let () =
  *   let state =
@@ -42,10 +42,6 @@ let sandbox_command =
  *     |> fun (t, _) -> State.specialize t (Player_id.of_int 0)
  *   in
  *   printf "%s\n%!" (Sexp.to_string (State.sexp_of_t (fun _ -> Sexp.unit) state)) *)
-
-
-    )
-;;
 
 let hash seed i =
   if i = 0
